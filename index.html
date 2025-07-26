@@ -3,240 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Laundry Services</title>
-    <style>
-        .img{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-        #nav{
-            font-size: 1.5rem;
-            font-family: Arial, sans-serif;
-            margin-left: 25%;
-            margin-right: 25%;
-            gap: 20px;
-
-            
-        }
-        #navbar {
-            background-color: #5bc7f5;
-            color: #000000;
-            height: 50px;
-            
-        }
-        li:hover{
-            color: white;
-            text-decoration: underline;
-        }
-        .Hero{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px 100px;
-            background-color: #e6f4f9;
-            border-bottom: 2px solid #5bc7f5;
-        }
-        #image{
-            width: 300px;
-            height: 400px;
-            border-radius: 20px;
-        }
-        h1{
-            font-size: 4rem;
-            color: #1c2c4c;
-        }
-        p{
-            font-size: 1.5rem;
-            color: #333;
-        }
-        .logo{
-            width: 400px;
-            height: 250px;
-        }
-        .container{
-            padding-top: 50px;
-        }
-        body{
-            background-color: #e6f4f9;
-        }
-        footer{
-            background-color: #5bc7f5;
-            color: #000000;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-        #heading{
-            color: #000000;
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .about {
-            border-top: 2px solid #5bc7f5;
-            margin-top: 50px;
-        }
-    </style>
+    <title>Laundry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
+<style>    
+
+    #ul {
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        gap: 50px;
+    }
+    #logo{
+        color: rgb(63, 63, 101);
+        font-weight: bold;
+        padding: 10px 0 0 25px;
+        font-size: 1.5em;
+        
+    }
+    #username{
+        height: 50px;
+        width: 100px;
+        border-radius: 15%;
+        position: relative;
+        right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(210, 233, 251);
+        color:  #2196F3;
+        font-weight: bold; 
+    }
+
+    li{
+       
+        color: rgb(128, 128, 128);
+        font-size: 1.5em;
+    }
+    #heading{
+        font-size: 3em;
+        color: #000000;
+        font-weight: bold;
+    }
+    #subheading{
+        font-size: 2.5em;
+        color: #2196F3;
+        font-weight: bold;
+    }
+    #para{
+        font-size: 1.2em;
+        color: #666666;
+
+    }
+    button{
+        background-color: #2196F3;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 20px;
+        height: 70px;
+        border: none;
+        margin: 20px 0 0 20px;
+    }
+    img{
+        height: 500px;
+    }
+;
+
+
+           
+</style>
 <body>
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand" href="#"><img class="img" src="logo.jpg" alt=""></a>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#" id="logo">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav" id="nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul  class="navbar-nav" id="ul">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#Home">Home</a>
+                        <a class="nav-link" href="#">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#footer">Contact Us</a>
+                        <a class="nav-link" href="#">Contact US</a>
                     </li>
                 </ul>
             </div>
-            <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-                <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            </form>
+            <label id="username" for="name">username</label>
         </nav>
-        </nav>
-        
     </header>
-    <section id="Home" class="Hero">
-        <div class="left">
-            <h1>Clean Clothes, Cleaner Planet</h1>
-            <p>We use eco-friendly detergents and energy-efficient machines to keep both your clothes and the environment fresh.</p>
-            <p>Experience the convenience of our laundry services with just a click.</p>
-            <button class="btn btn-primary">Book a Service Today</button>
+    <main>
+        <section class="container d-flex justify-content-between align-items-center hero" style="height: 75vh;">
+            <div class="left">
+                <h1 id="heading"> Revitalize Your <br>clothes with Expert</h1>
+                <h1 id="subheading">Laundry Services!</h1>
+                <p id="para">From premium dry cleaning to swift wash and fold, we <br>deliver care and convenience. Schedule a pickup and <br> and
+                    rediscover the freshness of your clothes today!</p>
+                <button  >Book a service today!</button>
+            </div>
+            <div class="right">
+                <img src="imge.webp" alt="Laundry Service">
+            </div>
 
-        </div>
-        <div class="right">
-            <img id="image" src="hero-logo.webp" alt="">
-        </div>
-
-    </section>
+        </section>
+    </main>
     
-    <section id="services" class=" container">
-        <h2 id="heading">Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="logo" src="logi-2.jpg" class="card-img-top" alt="Laundry Service">
-                    <div class="card-body">
-                        <h5 class="card-title">Laundry Service</h5>
-                        <p class="card-text">We offer professional laundry services with quick turnaround times.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="logo" src="logo-3.jpg" class="card-img-top" alt="Dry Cleaning">
-                    <div class="card-body">
-                        <h5 class="card-title">Dry Cleaning</h5>
-                        <p class="card-text">Specialized dry cleaning services for delicate fabrics and garments.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>  
-                    </div>
-                </div>  
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="logo" src="logo-4.jpg" class="card-img-top" alt="Ironing Service">
-                    <div class="card-body">
-                        <h5 class="card-title   ">Ironing Service</h5>
-                        <p class="card-text">Professional ironing services to keep your clothes crisp and wrinkle-free.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>          
-                    </div>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <section id="about" class="about">
-        <div class="container">
-            <h2 id="heading">About Us</h2>
-            <p>We are a dedicated team of laundry professionals committed to providing top-notch laundry services. Our mission is to make your life easier by taking care of your laundry needs with efficiency and care.</p>
-            <p>With years of experience in the industry, we understand the importance of clean clothes and the impact of eco-friendly practices. We use high-quality detergents and energy-efficient machines to ensure your clothes are not only clean but also environmentally friendly.</p>
-        </div>
-    </section>
-    <footer id="footer">
-        
-            <p><b> Contact  Us : </b></p>
-            <p>Thank you for visiting our web page!</p>
-            <p>For services or questions, contact us at:</p>
-            <p>📞 (123) 456-7890</p>
-            <p>📧 order @laundryservices.com</p>
-            <p>Follow us on social media:</p>
-            <p>Facebook: <a href="https://www.facebook.com">Laundry</a></p>           
-            <p>Instagram: <a href="https://www.instagram.com">Laundry</a></p>
-            <p>Twitter: <a href="https://www.twitter.com">Laundry</a></p>
-            <p>Visit us at:</p>
-            <style>
-                @media (max-width: 992px) {
-                    .Hero {
-                        flex-direction: column;
-                        padding: 30px 20px;
-                    }
-                    #image {
-                        width: 250px;
-                        height: 250px;
-                        margin-top: 20px;
-                    }
-                    h1 {
-                        font-size: 2.5rem;
-                    }
-                    p {
-                        font-size: 1.1rem;
-                    }
-                    .logo {
-                        width: 100%;
-                        height: 150px;
-                    }
-                    #nav {
-                        margin-left: 0;
-                        margin-right: 0;
-                        font-size: 1.1rem;
-                        gap: 10px;
-                    }
-                }
-                @media (max-width: 576px) {
-                    .Hero {
-                        padding: 15px 5px;
-                    }
-                    #image {
-                        width: 150px;
-                        height: 150px;
-                    }
-                    h1 {
-                        font-size: 1.5rem;
-                    }
-                    .logo {
-                        height: 80px;
-                    }
-                    #heading {
-                        font-size: 1.5rem;
-                    }
-                    footer {
-                        padding: 10px;
-                        font-size: 0.9rem;
-                    }
-                }
-            </style>
-            <p>📍 123 Sugar Lane, Bakeville, CA</p>
-    </footer>
 </body>
 </html>
+
